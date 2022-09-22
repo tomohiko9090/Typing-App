@@ -8,6 +8,10 @@ body {
   font-size:32px;
 }
 
+.mb-20{
+  margin-bottom: 20px;
+}
+
 .container {
   width: 400px;
   margin: 0 auto;
@@ -39,5 +43,34 @@ body {
 }
 
 .startButton:hover{
-  
+  opacity: 0.7;
+}
+
+.question{
+  color: grey;
+}
+
+.clear{
+  color: #03a9f4;
+}
+
+.typeForm{
+  text-align: center ;
+  outline: none;
+  border: none;
+}
+
+.typeFormWrapper{
+  border-bottom: 1px solid grey;
+}
+
+/* 0.3秒かけてゲージが変わる */
+.gauge{
+  height: 12px;
+  transition: all .3s ease 
+}
+
+.gaugeWrapper{
+  border: 1px solid;
+  height: 12px;
 }
