@@ -5,7 +5,8 @@
 }
 
 body {
-  font-size:32px;
+  /* font-size:32px; */
+  font-size:25px;
 }
 
 .mb-20{
@@ -13,7 +14,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
   text-align: center;
 }
