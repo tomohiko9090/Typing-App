@@ -1,5 +1,5 @@
 # Vue.js
-(Wikipedia参照)  
+Wikipedia参照
 >Vue.js（ヴュー・ジェイエス）またはVueは、Webアプリケーションにおけるユーザーインターフェイスを構築するための、オープンソースのJavaScriptフレームワークである。
 
 ## 参考リンク
