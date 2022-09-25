@@ -7,6 +7,8 @@ Wikipedia参照
 - Vue3公式ドキュメント
   - https://v3.ja.vuejs.org/guide/introduction.html#vue-js-%E3%81%A8%E3%81%AF
 - YouTube | 【Vue.js入門】Vue.jsでタイピングゲームをつくってみよう！
-  - https://www.youtube.com/watch?v=dP652Gi_57k\
+  - https://www.youtube.com/watch?v=dP652Gi_57k
+- https://qiita.com/JetNel0/items/8aa1de448a16eb0c5e42
+  
  
 ## 導入
