@@ -1,7 +1,11 @@
 # Vue.js
 
-## 参考link
-Vue3公式ドキュメント↓  
-https://v3.ja.vuejs.org/guide/introduction.html#vue-js-%E3%81%A8%E3%81%AF
-
+## 参考リンク
+- リスキルテクノロジー研修用テキスト
+- Vue3公式ドキュメント
+  - https://v3.ja.vuejs.org/guide/introduction.html#vue-js-%E3%81%A8%E3%81%AF
+- YouTube | 【Vue.js入門】Vue.jsでタイピングゲームをつくってみよう！
+  - https://www.youtube.com/watch?v=dP652Gi_57k\
+ 
 ## 導入
+>ユーザーインターフェイスを構築するためのプログレッシブフレームワークです。他のモノリシックなフレームワークとは異なり、Vue は少しずつ適用していけるように設計されています。中核となるライブラリはビュー層だけに焦点を当てており、使い始めるのも、他のライブラリや既存のプロジェクトに統合することも容易です。一方で、Vue をモダンなツールやサポートライブラリ (opens new window)と組み合わせることで、洗練されたシングルページアプリケーションを開発することもできます。
