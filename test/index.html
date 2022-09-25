@@ -10,55 +10,26 @@
 
 <body>
   <h2>3つのディレクション</h2>
-
-  <h4>＜実験1: v-bind＞</h4>
+  <hr>
+  <h4>【実験1: v-bind】</h4>
   <div id="app1">
     <p>Vueインスタンス内のデータ → html属性</p>
     <input type="text" v-bind:value="myName">
-  </div>
+  </div><hr>
 
-  <h4>＜実験2: v-on＞</h4>
+  <h4>【実験2: v-on】</h4>
   <div id="app2">
-    <p> | html属性 → Vueインスタンス内のデータ</p>
+    <p>html属性 → Vueインスタンス内のデータ</p>
     <input type="text" v-on:input="inputEvent">
-  </div>
-
-  <h4>＜実験3: v-model＞</h4>
+  </div><hr>
+  
+  <h4>【実験3: v-model】</h4>
   <div id="app3">
     <p>html属性 ⇄ Vueインスタンス内のデータ</p>
     <input type="text" v-model="myName">
     {{myName}}
-  </div>
+  </div><hr>
+
 </body>
-
-
-<script>
-// 実験1
-const app1 = Vue.createApp({
-    data() {
-    return {
-      myName: '葛葉'
-    }
-  }
-}).mount("#app1")
-
-// 実験2
-const app2 = Vue.createApp({
-  methods:{
-    inputEvent(event) {
-      console.log(event.target.value);
-    }
-  }
-}).mount("#app2")
-
-// 実験3
-const app3 = Vue.createApp({
-    data() {
-    return {
-      myName: '葛葉'
-    }
-  }
-}).mount("#app3")
-
-</script>
+<script src="main.js"></script>
 </html>
