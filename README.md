@@ -9,6 +9,3 @@ Wikipedia参照
 - YouTube | 【Vue.js入門】Vue.jsでタイピングゲームをつくってみよう！
   - https://www.youtube.com/watch?v=dP652Gi_57k
 - https://qiita.com/JetNel0/items/8aa1de448a16eb0c5e42
-  
- 
-## 導入
