@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>タイピング</title>
+</head>
+<body oncopy="return false;">
+    <div id="app" class="container">
+    <div class="title">
+      <h1>Typing Cloud</h1>
+      <div class="marker"></div>
+    </div>
+
+    <!-- スタートボタンが押されない間は表示 -->
+    <button v-if="startFlg!=true" class="startButton mb-20" @click="gameStart">START</button>
+    <div></div>
+
+    <!-- スタートボタンを押すと表示 -->
+    <div v-if="startFlg">
+      <div class="question mb-20">{{ current_question }}</div>
+      <div v-if="current_question_counts == question_counts" class="clear">Clear!</div>
+      <div class="typeFormWrapper mb-20">
+        <!-- 双方向通信 -->
+        <input id="typeForm" v-model="typeBox" type="text" class="typeForm" onpaste="return false;">
+      </div>
+
+      <div class="gaugeWrapper mb-20">
+        <!-- 単方向通信 -->
+        <div v-bind:style="styleObject" class="gauge"></div>
+      </div>
+
+      <div>{{ current_question_counts }}/{{ question_counts }}</div>
+  </div>
+  <stop-watch></stop-watch>
+
+  </div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

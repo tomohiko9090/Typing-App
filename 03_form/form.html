@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Vue.jsを学ぼう</title>
+</head>
+<body>
+    <header><a href="/">目次へ</a></header>
+<main>
+<div id="app">
+    <form @submit.prevent="submitForm()">
+        <dl>
+            <dt>お名前</dt>
+            <dd><input type="text" v-model="form.name"></dd>
+
+            <dt>生年月日</dt>
+            <dd><input type="text" v-model="form.birthday"></dd>
+
+            <dt>性別</dt>
+            <dd>
+                <input type="text" v-model="form.gender" value="male">
+                <input type="text" v-model="form.gender" value="female">
+                <input type="text" v-model="form.gender" value="other">
+            </dd>
+
+            <dt>血液型</dt>
+            <dd>
+                <select v-model="form.bloodType">
+                    <option value=""></option>
+                    <option value="a">A型</option>
+                    <option value="b">B型</option>
+                    <option value="c">C型</option>
+                    <option value="ab">AB型</option>
+                </select>
+            </dd>
+
+            <dt>趣味</dt>
+            <dd>
+                <template v-for="(hobby, key) in hobbies" :key="key">
+                    <input type="checkbox" v-model="form.hobby" :value="key">
+                    {{ hobby }}
+                </template>
+            </dd>
+
+            <dt>メッセージ</dt>
+            <dd>
+                <textarea v-model="form.message"></textarea>
+            </dd>
+        </dl>
+    </form>
+    <hr>
+    {{ form }}
+  </div>
+</main>    
+
+<footer>
+
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

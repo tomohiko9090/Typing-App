@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!-- CDNを利用して読み込でVueを使用 -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Vue.jsを学ぼう</title>
+</head>
+<body>
+    <header><a href="/">目次へ</a></header>
+<!-- id="app"でVueアプリケーションのエントリーポイント -->
+<div id="app">
+    
+    <h3>1.双方向ディバイディング</h3>
+    <input type="text" v-model="message">
+    <p>{{ message }}</p>
+
+    <h3>2.Vueで計算して返す</h3>
+    <div>底辺: <input type="text" v-model="base"> cm</div>
+    <div>高さ: <input type="text" v-model="height"> cm</div>
+    <div>底辺: {{ area }} 平方 cm</div>
+    <br>
+    <div>半径: <input type="text" v-model="radius"> cm</div>
+    <div>円周: {{ circum }} cm</div>
+    <div>面積: {{ square }} 平方 cm</div>
+    <br>
+
+    <h3>3.for文で取り出す</h3>
+    <table>
+        <tr>
+            <th>商品名</th><th>単価</th><th>数量</th><th>金額</th>
+        </tr>
+        <tr v-for="(product, key) in products" :key="key">
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.stock }}</td>
+            <td>{{ product.price * product.stock }}</td>
+        </tr>
+    </table>
+    <br>
+
+    <h3>4.2重ループ</h3>
+    <table>
+        <tr v-for="(number1, key) in numbers" :key="number">
+            <td v-for="(number2, key) in numbers" :key="number">
+                {{ number1 * number2 }}
+            </td>
+        </tr>
+    </table>
+
+    <h3>5.条件付きレンダリング</h3>
+    <ul class="tab-menu">
+        <li
+            v-for="tab in tabs" :key="tab.name"
+            @click="activeTab = tab.name"
+            :class="{active: activeTab === tab.name}"
+        >{{ tab.text }}</li>
+    </ul>
+    <div class="tab-content">
+        <div v-if="activeTab === 'tabs-1'">
+            <p>タブ1の内容</p>
+        </div>
+        <div v-if="activeTab === 'tabs-2'">
+            <p>タブ2の内容</p>
+        </div>
+        <div v-if="activeTab === 'tabs-3'">
+            <p>タブ3の内容</p>
+        </div>
+    </div>
+    <br>
+
+
+    <div>
+        <button
+            v-for="(value, key) in hands"
+            :key="key"
+            @click="doJanken(key)"
+        >{{ value }}</button>
+    </div>
+
+    <div v-if="you != null">
+        <p>あなたは{{ hands[you] }}は、わたしは{{ hands[com] }}</p>
+        <div
+            v-if="you==0 && com==1 || you==1 && com==2 || you==2 && com==0"
+        >
+            あなたは勝ちです
+        </div>
+        <div v-else-if="you==com">あいこです</div>
+        <div v-else>あなたの負けです</div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
