@@ -8,4 +8,5 @@
   - https://www.youtube.com/watch?v=dP652Gi_57k\
  
 ## 導入
+>Wikipedia参照
 >Vue.js（ヴュー・ジェイエス）またはVueは、Webアプリケーションにおけるユーザーインターフェイスを構築するための、オープンソースのJavaScriptフレームワークである。
