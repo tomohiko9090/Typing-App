@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>3つのディレクション</h2>
+
+  <h4>＜実験1: v-bind＞</h4>
+  <div id="app1">
+    <p>Vueインスタンス内のデータ → html属性</p>
+    <input type="text" v-bind:value="myName">
+  </div>
+
+  <h4>＜実験2: v-on＞</h4>
+  <div id="app2">
+    <p> | html属性 → Vueインスタンス内のデータ</p>
+    <input type="text" v-on:input="inputEvent">
+  </div>
+
+  <h4>＜実験3: v-model＞</h4>
+  <div id="app3">
+    <p>html属性 ⇄ Vueインスタンス内のデータ</p>
+    <input type="text" v-model="myName">
+    {{myName}}
+  </div>
+</body>
+
+
+<script>
+// 実験1
+const app1 = Vue.createApp({
+    data() {
+    return {
+      myName: '葛葉'
+    }
+  }
+}).mount("#app1")
+
+// 実験2
+const app2 = Vue.createApp({
+  methods:{
+    inputEvent(event) {
+      console.log(event.target.value);
+    }
+  }
+}).mount("#app2")
+
+// 実験3
+const app3 = Vue.createApp({
+    data() {
+    return {
+      myName: '葛葉'
+    }
+  }
+}).mount("#app3")
+
+</script>
+</html>
