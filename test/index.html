@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/vue@next"></script>
-  <title>Document</title>
+  <title>3つのディレクション実験</title>
 </head>
 
 <body>
@@ -13,19 +13,19 @@
   <hr>
   <h4>【実験1: v-bind】</h4>
   <div id="app1">
-    <p>Vueインスタンス内のデータ → html属性</p>
+    <p>Vueインスタンス → html属性</p>
     <input type="text" v-bind:value="myName">
   </div><hr>
 
   <h4>【実験2: v-on】</h4>
   <div id="app2">
-    <p>html属性 → Vueインスタンス内のデータ</p>
+    <p>html属性 → Vueインスタンス</p>
     <input type="text" v-on:input="inputEvent">
   </div><hr>
   
   <h4>【実験3: v-model】</h4>
   <div id="app3">
-    <p>html属性 ⇄ Vueインスタンス内のデータ</p>
+    <p>html属性 ⇄ Vueインスタンス</p>
     <input type="text" v-model="myName">
     {{myName}}
   </div><hr>
