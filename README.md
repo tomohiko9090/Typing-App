@@ -1,3 +1,8 @@
+## Typing-App
+<img width="1198" alt="スクリーンショット 2022-10-01 14 45 32" src="https://user-images.githubusercontent.com/66200485/193394634-51c5f74f-582a-4140-bf00-66a6db52516e.png">  
+https://tomohiko9090.github.io/typing.html
+
+
 ## Vue.jsとは？
 Wikipedia参照
 >Vue.js（ヴュー・ジェイエス）またはVueは、Webアプリケーションにおけるユーザーインターフェイスを構築するための、オープンソースのJavaScriptフレームワークである。
