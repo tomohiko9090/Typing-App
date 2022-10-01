@@ -1,6 +1,6 @@
 ## Typing-App
-https://tomohiko9090.github.io/typing.html
 <kbd><img width="617" alt="スクリーンショット 2022-10-01 14 47 48" src="https://user-images.githubusercontent.com/66200485/193394696-629f4da5-92d1-4cde-996d-a147b7023cb1.png"></kbd>  
+https://tomohiko9090.github.io/typing.html
 
 ## Vue.jsとは？
 Wikipedia参照
