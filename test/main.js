@@ -11,7 +11,7 @@ const app1 = Vue.createApp({
 const app2 = Vue.createApp({
   methods:{
     inputEvent(event) {
-      console.log(event.target.value);
+      console.log(event.target.value); // 入力された値をコンソールに表示
     }
   }
 }).mount("#app2")
