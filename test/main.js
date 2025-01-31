@@ -25,3 +25,7 @@ const app3 = Vue.createApp({
   }
 }).mount("#app3")
 
+// モーメントのライブラリのカレント日時
+moment().format('YYYY-MM-DD HH:mm:ss') // 現在時刻を表示
+
+// moment(時刻); → 

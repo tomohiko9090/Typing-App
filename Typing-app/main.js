@@ -25,6 +25,11 @@ const app = Vue.createApp({
         "Site Reliability Engineering",
         "Weekly Active Users",
         "Team Engagement Plan",
+        "magellan_summary_result_names",
+        "magellan_check_survey_settings",
+        "attribute_group_sort_no",
+        "allow(Aws::S3::Client).to receive(:new).and_return(s3_client_mock)",
+        "overflow-wrap: anywhere;"
       ],
       // questions:[
       //   "1", //  
